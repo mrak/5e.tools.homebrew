@@ -1,0 +1,451 @@
+{
+	"siteVersion": "1.130.3",
+	"_meta": {
+		"sources": [
+			{
+				"json": "wonders_wands_of_literal_legerdemain",
+				"abbreviation": "WWoLL",
+				"full": "Wonder's Wands of Literal Legerdemain",
+				"url": "",
+				"version": "1.0.0",
+				"authors": [
+					"The Wonderful Wandering Wonder"
+				],
+				"convertedBy": [
+					"Verity"
+				]
+			}
+		],
+		"dateAdded": 1627877949,
+		"dateLastModified": 1627877949
+	},
+	"item": [
+		{
+			"name": "Wonder's Wanderful Wand",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "artifact",
+			"tier": "major",
+			"recharge": "dawn",
+			"reqAttune": true,
+			"entries": [
+				"This wand can magically absorb other magical wands, permanently transferring their features into this one. Not all features are obtained, however. Any property of an absorbed wand that would result in the wand's destruction, loss of a feature, permanent change into another item, or any other effect that would harm or change the integrity of the wand is not transferred.",
+				"To magically absorb a wand into this one requires a number of dedicated hours spent in meditation with the two items based on the rarity of the other wand: 1 hour for common wands, 2 for uncommon, 3 for rare, 4 for very rare, 5 for legendary, and 6 for artifacts.",
+				"All features transferred to this wand are independently usable as if they were still separate items.",
+				"If more than one absorbed wand granted the same feature, or different grades of the same feature, only the highest grade of that type of feature is kept. For instance, if a {@item +1 Wand of the War Mage|dmg} is absorbed and then later a {@item +2 Wand of the War Mage|dmg} is absorbed, the total bonus to spell attack rolls on this wand is +2.",
+				"If a feature had charges, the number of charges start at the maximum possible for the feature. The feature recharges as described in the original wand. If the feature did not recharge, it now fully recharges some time after use of its last charge based on the wand's rarity: {@dice 1d4} days at dawn for a common wand, {@dice 1d6} for uncommon, {@dice 1d8} for rare, {@dice 1d10} for very rare, {@dice 1d12} for legendary, and {@dice 1d20} for artifacts. If the feature had a roll upon using it's last charge to determine its fate, that roll and possible result are ignored."
+			]
+		},
+		{
+			"name": "Wand of Prismatic Spray",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges to spray up to 8 tiny prisms out of the end of the wand. Each of these prisms isolates a different color (your choices) from a beam of light. The prisms disappear after 10 minutes.",
+				"The wand regains {@dice 1d3} expended charges daily at dawn."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/items/DMG/Wand%20of%20Wonder.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Wand of Plane Shift",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and conjure a spectral woodworker's plane on a wooden surface within 30 feet that you can see. By waving the wand you can flatten the wood's surface, remove paint, or clear any imperfections. The tool persistes for 10 minutes or until dismissed.",
+				"The wand regains all expended charges daily at dawn."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/items/DMG/Wand%20of%20Polymorph.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Wand of Finger of Death",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and conjure a floating, skeletal hand that flips the middle finger to a target of your choice. It remains until dismissed, the next dawn, or this wand is used again.",
+				"The wand regains all expended charges daily at dawn."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/items/DMG/Wand%20of%20Orcus.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Wand of Recall",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges to instantaneously remember the name of a creature, place, or other word that you have heard before along with any associated context.",
+				"The wand regains {@dice 1d3} expended charges daily at dawn. If you expend the wand's last charge roll a {@dice d20}. On a 1, you permanently forget that word and context (until told again) as the wand crumbles to ashes and is destroyed."
+			]
+		},
+		{
+			"name": "Wand of Sunbeam",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"tier": "minor",
+			"reqAttune": false,
+			"entries": [
+				"As a bonus action while holding this wand, a beam of bright sunlight emits from its tip in a cone 60 feet long and 15 ft wide. Magical sources of darkness or dim light are unaffected unless affected by sunlight. You can cancel the effect with another bonus action while holding the wand."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/items/DMG/Wand%20of%20Fireballs.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Wand of Moonbeam",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"tier": "minor",
+			"reqAttune": false,
+			"entries": [
+				"As a bonus action while holding this wand, a beam of dim moonlight emits from its tip in a cone 60 feet long and 15 ft wide. Magical sources of darkness are unaffected. You can cancel the effect with another bonus action while holding the wand."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/items/DMG/Wand%20of%20Magic%20Detection.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Wand of Blink",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and target a creature you can see with at least one eye within 30 feet of you. The target must succeed a DC 10 Charisma saving throw or be forced to blink aggressively for 1 minute.",
+				"The wand regains all expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand transforms into a {@item wand of eyebite|wonders_wands_of_literal_legerdemain}."
+			]
+		},
+		{
+			"name": "Wand of Eyebite",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and target a creature you can see with at least one eye within 30 feet of you. The target must succeed a DC 10 Charisma saving throw or be forced to widen their eyes and bite whenever they make eye contact with another creature for 1 minute.",
+				"The wand regains all expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand transforms into a {@item wand of arcane eye|wonders_wands_of_literal_legerdemain}."
+			]
+		},
+		{
+			"name": "Wand of Arcane Eye",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and target a creature you can see with at least one eye within 30 feet of you. The target must succeed a DC 10 Charisma saving throw or have one of its eyes change appearance (your choice) for 1 minute.",
+				"The wand regains all expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand transforms into a {@item wand of blink|wonders_wands_of_literal_legerdemain}."
+			]
+		},
+		{
+			"name": "Wand of Blade Barrier",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "uncommon",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and cause a magic sheath to envelope a bladed weapon that you can see within 30 feet. While sheathed in this way, the weapons damage type changes to bludgeoning if it wasn't already. If the weapon was magical, it remains magical. Otherwise it is treated as a nonmagical weapon. This effect ends if the weapon is unsheathed or at the next dawn.",
+				"The wand regains {@dice 1d3} expended charges daily at dawn."
+			]
+		},
+		{
+			"name": "Wand of Far Step",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and target a humanoid you can see within 30 feet of you. The target must succeed a DC 10 Charisma saving throw or be forced to use extended strides when it moves for 1 minute.",
+				"The wand regains all expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand transforms into a {@item wand of misty step|wonders_wands_of_literal_legerdemain}."
+			]
+		},
+		{
+			"name": "Wand of Misty Step",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and target a humanoid you can see within 30 feet of you. The target must succeed a DC 10 Dexterity saving throw or have its feet shrouded in dense mist for 1 minute.",
+				"The wand regains all expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand transforms into a {@item wand of thunder step|wonders_wands_of_literal_legerdemain}."
+			]
+		},
+		{
+			"name": "Wand of Thunder Step",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and target a humanoid you can see within 30 feet of you. The target must succeed a DC 10 Dexterity saving throw or have each of its steps emit a sound of faint thunder for 1 minute. While affected in this way, other creatures have advantage on hearing-based Perception checks to detect the target.",
+				"The wand regains all expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand transforms into a {@item wand of far step|wonders_wands_of_literal_legerdemain}."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/items/DMG/Wand%20of%20Lightning%20Bolts.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Wand of Cloud Kill",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and cause a nonmagical cloud that you can see to disappear for 1 minute.",
+				"The wand regains all expended charges daily at dawn."
+			]
+		},
+		{
+			"name": "Wand of Tongues",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and target a creature with a mouth that you can see within 30 feet of you. The target must succeed a DC 10 Charisma saving throw or be forced to stick out its tongue for 1 minute. Creatures without a tongue are unaffected.",
+				"The wand regains all expended charges daily at dawn."
+			]
+		},
+		{
+			"name": "Wand of Invisibility",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"tier": "minor",
+			"reqAttune": false,
+			"entries": [
+				"As a bonus action while holding this wand you can cause it to become invisible, or visible again if it was already invisible."
+			]
+		},
+		{
+			"name": "Wand of Fear",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"tier": "minor",
+			"reqAttune": false,
+			"entries": [
+				"As a action while holding this wand you can name a phobia. If the named phobia can be seen within 60 feet by the wand or if the wand is subjected to a situation invoking the phobia, it screams loudly in a voice that can be heard up to 200 feet away.",
+				"Only one phobia can be active at a time. A subsequent action can be taken while holding the wand to either change its phobia or end its phobia."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/items/DMG/Wand%20of%20Fear.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Wand of Darkvision",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"tier": "minor",
+			"reqAttune": false,
+			"entries": [
+				"As a action while holding this wand you can cause it to emit bright light in a 30 foot radius and dim light for an additional 30 feet. You can use an action while holding the wand to end this effect. Its light cannot pierce magical sources of darkness."
+			]
+		},
+		{
+			"name": "Wand of Darkness",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "uncommon",
+			"tier": "minor",
+			"reqAttune": false,
+			"entries": [
+				"As a action while holding this wand you can cause it to emit darkness in a 30 foot radius and dim light for an additional 30 feet. You can use an action while holding the wand to end this effect. Magical sources of light are unaffected."
+			]
+		},
+		{
+			"name": "Wand of Feather Fall",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "common",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and cause falling feathers to appear in a five foot cube that you can see within 30 feet. Until your next turn, the area is lightly obscured.",
+				"The wand regains {@dice 1d3} expended charges daily at dawn."
+			]
+		},
+		{
+			"name": "Wand of Counterspell",
+			"type": "WD",
+			"focus": true,
+			"weight": 1,
+			"source": "wonders_wands_of_literal_legerdemain",
+			"rarity": "uncommon",
+			"charges": 3,
+			"tier": "minor",
+			"recharge": "dawn",
+			"reqAttune": false,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges to cause one of two effects. The wand can be used as an action to dismiss one of these effects early without using a charge.",
+				{
+					"type": "entries",
+					"name": "Spoken Counter",
+					"entries": [
+						"A loud voice begins counting objects or creatures of a type of your choice within 60 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Kitchen Counter",
+					"entries": [
+						"A floating countertop appears in a space adjacent to you. It can be up to 5 feet to a side, and positioned up to 5 feet off the floor. It can bear up to 500 pounds of nonliving material. Living creatures pass through the countertop as if it were an illusion. It remains until dismissed, the wand is used again, or if the wand travels more than 30 feet from the countertop."
+					]
+				},
+				"The wand regains {@dice 1d3} expended charges daily at dawn."
+			]
+		}
+	]
+}

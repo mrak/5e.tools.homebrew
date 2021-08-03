@@ -1,0 +1,2089 @@
+{
+	"siteVersion": "1.130.3",
+	"_meta": {
+		"sources": [
+			{
+				"json": "dungeon_master",
+				"abbreviation": "DM",
+				"full": "Dungeon Master's Homebrew",
+				"url": "",
+				"version": "1.0.0",
+				"authors": [
+					"The Dungeon Master"
+				],
+				"convertedBy": [
+					"Verity"
+				]
+			}
+		],
+		"dateAdded": 1623216218,
+		"dateLastModified": 1627877949
+	},
+	"item": [
+		{
+			"name": "Trinket of The Patron",
+			"source": "dungeon_master",
+			"rarity": "unknown (magic)",
+			"charges": 1,
+			"recharge": "dawn",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/items/PHB/Trinket%20(PHB).png"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Your patron, an ancient being of benevolence (malevolence?) has gifted each of you a {@item trinket|phb}. On its own it is simply a curio, lightly touched by mystery. In the hands of the dedicated owner, however, hidden powers are unlocked.",
+				{
+					"type": "entries",
+					"name": "Entreat Patron",
+					"entries": [
+						"You can use the trinket to talk to the Icon of your sanctuary as if you cast {@spell sending}. There is no guarantee that they respond, however. Sometimes instead of the Icon the patron themself may reply."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Find the Sanctuary",
+					"entries": [
+						"Whisper the word and you immidiately know the shortest, most direct physical route to the nearest sanctuary portal of the patron as if you had cast {@spell find the path} with that location in mind. You must be within 3 miles of a sanctuary portal or it fails. You must wait until the next dawn before using it in this way again."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sanctuary Keys",
+					"entries": [
+						"When held by the assigned owner within 5 feet of a hidden sanctuary portal, it activates and reveals itself to the holder. Once inside, or if you move more than 5 feet away, the portal closes again."
+					]
+				}
+			],
+			"wonderous": true,
+			"reqAttune": false,
+			"attachedSpells": [
+				"find the path",
+				"sending"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Pipe Fox",
+			"source": "dungeon_master",
+			"size": "T",
+			"type": {
+				"type": "fey",
+				"tags": []
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "3d4",
+				"average": 7
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 40
+			},
+			"str": 2,
+			"dex": 17,
+			"con": 10,
+			"int": 10,
+			"wis": 18,
+			"cha": 10,
+			"skill": {
+				"insight": "+6",
+				"stealth": "+5",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Sylvan",
+				"Common"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The pipe fox can use its action to polymorph into a beast form that resembles a ferret (speed 30 ft., climb 20 ft.), a pidgeon (20 ft., fly 60 ft.), or an eel snake (swim 30 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The pipe fox has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The pipe fox has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 piercing damage"
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The pipe fox magically turns {@condition invisible} until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the pipe fox wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"variant": [
+				{
+					"name": "Pipe Fox Familiar",
+					"entries": [
+						"Some pipe foxes are willing to serve spellcasters as a familiar. Such pipe foxes have the following trait.",
+						{
+							"name": "Familiar",
+							"type": "entries",
+							"entries": [
+								"The pipe fox can serve another creature as a familiar, forming a magic, telepathic bond with that willing companion. While the two are bonded, the companion can sense what the pipe fox senses as long as they are within 1 mile of each other. While the pipe fox is within 10 feet of its companion, the companion shares the pipe fox's Magic Resistance trait. At any time and for any reason, the pipe fox can end its service as a familiar, ending the telepathic bond."
+							]
+						}
+					],
+					"type": "variant"
+				}
+			],
+			"familiar": true,
+			"traitTags": [
+				"Keen Senses",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"S",
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Imp.png?v=1.131.2",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Pipe foxes are curious creatures native to the Feywild. They are spiritually attuned to the thoughts and magics around them, and have a knack for knowing what might happen next. They like to play tricks on, or simply observe closely, those around them by taking advantage of their shapeshifting ability or {@spell invisibility} to get close undetected. They may be mischievous, but they mean no harm.",
+							"A pipe fox can assume animal form at will, but in its natural state it resembles a small, limbless fox with a long and slender body.",
+							{
+								"type": "inset",
+								"name": "Variant: Pipe Fox Familiar",
+								"entries": [
+									"Some pipe foxes are willing to serve spellcasters as a familiar. Such pipe foxes have the following trait.",
+									{
+										"name": "Familiar",
+										"type": "entries",
+										"entries": [
+											"The pipe fox can serve another creature as a familiar, forming a magic, telepathic bond with that willing companion. While the two are bonded, the companion can sense what the pipe fox senses as long as they are within 1 mile of each other. While the pipe fox is within 10 feet of its companion, the companion shares the pipe fox's Magic Resistance trait. At any time and for any reason, the pipe fox can end its service as a familiar, ending the telepathic bond."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/VvRAKIu.png"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"the pipe fox's innate spellcasting ability is Wisdom (spell save {@dc 14}). It can innately cast the following spells, without verbal or material components."
+					],
+					"will": [
+						"{@spell guidance}"
+					],
+					"daily": {
+						"1": [
+							"{@spell augury}",
+							"{@spell detect evil and good}",
+							"{@spell detect magic}",
+							"{@spell detect poison and disease}",
+							"{@spell detect thoughts}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"alias": [
+				"Kuda-gitsune"
+			]
+		},
+		{
+			"name": "Auralich'el",
+			"alias": [
+				"Mind Flayer Lich"
+			],
+			"source": "dungeon_master",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 16,
+			"int": 20,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+10",
+				"int": "+12",
+				"wis": "+9"
+			},
+			"skill": {
+				"arcana": "+19",
+				"history": "+12",
+				"insight": "+9",
+				"perception": "+9"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"cold",
+				"lightning",
+				"necrotic"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Undercommon",
+				"telepathy 120 ft."
+			],
+			"cr": "22",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The illithilich's innate spellcasting ability is Intelligence (spell save {@dc 20}). It can innately cast the following spells, requiring no components."
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell detect thoughts}",
+						"{@spell levitate}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell demiplane}",
+							"{@spell dominate monster}",
+							"{@spell geas}",
+							"{@spell imprisonment}",
+							"{@spell plane shift} (self only)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The illithilich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). The lich has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell control flames|XGE}",
+								"{@spell dancing lights}",
+								"{@spell friends}",
+								"{@spell gust|XGE}",
+								"{@spell mage hand}",
+								"{@spell mind sliver|TCE}",
+								"{@spell minor illusion}",
+								"{@spell mold earth|XGE}",
+								"{@spell prestidigitation}",
+								"{@spell shape water|XGE}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell mind spike|XGE}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell mind flare|dungeon_master}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell dimension door}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects}",
+								"{@spell synaptic static|XGE}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell plane shift}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell dominate monster}",
+								"{@spell power word stun}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell psychic scream|XGE}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the illithilich fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If it has a phylactery, a destroyed illithilich gains a new body in {@dice 1d10} days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"The illithilich has advantage on saving throws against any effect that turns undead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The illithilich has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mind Lash",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one creature. {@h}2 ({@damage 1d4}) slashing plus 4 ({@damage 2d4}) psychic damage. The target must succeed on a {@dc 18} Wisdom saving throw or have disadvantage on Intelligence, Wisdom, and Charisma saving throws for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Paralyzing Touch",
+					"entries": [
+						"{@atk ms} {@hit 12} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 18} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one creature. {@h}21 ({@damage 3d10 + 5}) psychic damage. If the target is Large or smaller, it is {@condition grappled} (escape {@dc 15}) and must succeed on a {@dc 20} Intelligence saving throw or be {@condition stunned} until this grapple ends."
+					]
+				},
+				{
+					"name": "Extract Brain",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one {@condition incapacitated} humanoid {@condition grappled} by the lich. {@h}55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the lich kills the target by extracting and devouring its brain."
+					]
+				},
+				{
+					"name": "Mind Blast {@recharge 5}",
+					"entries": [
+						"The illithilich magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a {@dc 18} Intelligence saving throw or take 27 ({@damage 5d8 + 5}) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Tentacles",
+					"entries": [
+						"The illithilich makes one attack with its tentacles."
+					]
+				},
+				{
+					"name": "Extract Brain (Costs 2 Actions)",
+					"entries": [
+						"The illithilich uses Extract Brain."
+					]
+				},
+				{
+					"name": "Mind Blast (Costs 3 Actions)",
+					"entries": [
+						"The illithilich recharges its Mind Blast and uses it."
+					]
+				},
+				{
+					"name": "Cast Spell (Costs 1–3 Actions)",
+					"entries": [
+						"The illithilich uses a spell slot to cast a 1st-, 2nd-, or 3rd-level spell that it has prepared. Doing so costs 1 legendary action per level of the spell."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Illithilich",
+				"source": "VGM"
+			},
+			"environment": [
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/mind-flayer-lich-illithilich.mp3?v=1.130.3"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"U",
+				"TP"
+			],
+			"damageTags": [
+				"Y",
+				"C",
+				"P"
+			],
+			"spellcastingTags": [
+				"P",
+				"I",
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"stunned",
+				"grappled"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/VGM/Illithilich.png?v=1.130.3",
+			"fluff": {
+				"name": "Illithilich",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Mind flayers that pursue arcane magic are exiled as deviants, and for them no eternal communion with an elder brain is possible. The road to lichdom offers a way to escape the permanency of death, but that path is long and solitary. Alhoons are mind flayers that use a shortcut.",
+											{
+												"name": "Arcane Temptation",
+												"entries": [
+													" Elder brains forbid mind flayers from pursuing magic power aside from psionics, but it isn't an interdiction they must often enforce. Illithids brook no masters but members of their own kind, so it isn't in their nature to bow to any god or otherworldly patron. However, wizardry remains a rare temptation.",
+													"In the pages of a spellbook, an illithid sees a system to acquire authority. Through the writings of the wizard who penned it, the illithid perceives the workings of a highly intelligent mind. Most mind flayers who find a spellbook react with abhorrence or indifference, but for some a spellbook is a gateway to a new way of thinking.",
+													"For a time, the study of such forbidden texts can be hidden from other illithids and even from an elder brain. Understanding of wizardry eludes the mind like a living thing. Yet eventually, understanding comes, and a mind flayer arcanist must accept itself as deviant and flee the colony if it is to live.",
+													"Confronting this awful reality, a group of nine mind flayer deviants used their arcane magic and psionics to weave a new truth. These nine called themselves the alhoon, and ever afterward, all those who follow in their footsteps have been referred to by the same name.",
+													"Initially, an alhoon can be difficult to distinguish from a normal mind flayer. The most obvious difference is the lack of the mind flayer's ever-present mucus coating. Without that protection, an alhoon's skin becomes dry and cracked. Its eyes might appear shriveled and sunken. Both of these clues are easily missed by someone who hasn't seen a mind flayer. However, in short order, an alhoon's flesh withers away and its empty eye sockets gleam with cold pinpricks of light like other liches.",
+													"The undeath conferred by a periapt of mind trapping lasts only so long as the life of the living victim selected. Thus an alhoon who brought a 200-year-old elf to be sacrificed looks forward to a much longer existence than one that sacrifices a 35-year-old person. Alhoons can extend their existence by repeating the ritual with new victims, effectively resetting the clocks for themselves.",
+													"Destruction of a periapt of mind trapping consigns those trapped within it to oblivion, and thus alhoons often work together to create elaborate protections about the periapt and their preferred ritual site. Sometimes a single alhoon is entrusted with the periapt of mind trapping, but this is a dangerous proposition. Anyone who holds the periapt of mind trapping gains advantage on attacks, saves, and check against the alhoons associated with its creation, and those alhoons in turn suffer disadvantage on attacks, saves, and check against the holder.",
+													"In addition, the holder of the periapt can telepathically communicate with any sacrificed soul trapped within, and alhoons within the periapt can speak telepathically with the holder. A creature carrying the periapt can't prevent communication from alhoons but can silence trapped souls."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Existential Fear",
+												"entries": [
+													" Arcanist deviants that taste freedom from the colony react in a variety of ways. Some prize their privacy, others seek to commune with similar minds, and still others seek to dominate a colony, elevating themselves to the position of leadership normally held by an elder brain. Regardless of the arcanist's personal inclinations, it faces the same stark fact: When it dies, it will not join the host of minds in the elder brain. Deviant minds are never accepted as part of the collective. For it, death means oblivion."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Dreadful Deliverance",
+												"entries": [
+													" Lichdom offers salvation and the prospect of being able to pursue knowledge indefinitely. Having feasted on the brains of people when alive, a mind flayer has no compunction about feeding souls to a phylactery. The only hindrance to a mind flayer becoming a lich is the means, which is a secret some mind flayer arcanists stop at nothing to discover. Yet lichdom requires an arcane spellcaster to be at the apex of power, something many mind flayers find is far from their grasps."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "A Psionic Secret",
+												"entries": [
+													" Alhoons can cooperate in the creation of a periapt of mind trapping, a fist-sized container made of silver, emerald, and amethyst. The process requires at least three mind flayer arcanists and the sacrifice of an equal number of souls from living victims in a three-day-long ritual of spellcasting and psionic communion. Upon its completion, free-willed undeath is conferred on the mind flayers, turning them into alhoons."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Precarious Immortality",
+												"entries": [
+													" Unlike with true lichdom, the periapt of mind trapping doesn't restore the alhoons to undeath if they are destroyed. Instead, a destroyed alhoon's mind is transferred to the periapt where it remains in communion with any other trapped alhoon minds, as well as the souls of those sacrificed."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Variant: Mind Flayer Lich (Illithilich)",
+										"entries": [
+											"The path to true lichdom is something only the most powerful mind flayer mages can pursue, since it requires the ability to craft a phylactery and cast the {@spell imprisonment} spell. A mind flayer lich uses the lich stat block (see the Monster Manual), with the following changes:",
+											{
+												"type": "list",
+												"items": [
+													"It has a challenge rating of 22 (41,000 XP).",
+													"It speaks Deep Speech and Undercommon, and has telepathy out to a range of 120 feet.",
+													"It has the Magic Resistance and Innate Spellcasting (Psionics) traits, as well as the Tentacles, Extract Brain, and Mind Blast action options (all described below). So long as a mind flayer lich feeds captured souls to its phylactery, it maintains the muscular power of its tentacles and the ability to extract brains.",
+													"Its suite of legendary actions (described below) is different from that of the normal lich."
+												]
+											},
+											{
+												"name": "Magic Resistance",
+												"entries": [
+													" The lich has advantage on saving throws against spells and other magical effects.",
+													"At will: detect thoughts, levitate",
+													"1/day each: dominate monster, plane shift (self only)"
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Innate Spellcasting (Psionics)",
+												"entries": [
+													" The lich's innate spellcasting ability is Intelligence (spell save DC 20). It can innately cast the following spells, requiring no components."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Actions",
+										"entries": [
+											{
+												"name": "Tentacles",
+												"entries": [
+													"Melee Weapon Attack: +12 to hit, reach 5 ft., one creature. Hit: 21 ({@damage 3d10 + 5}) psychic damage. If the target is Large or smaller, it is {@condition grappled} (escape DC 15) and must succeed on a DC 20 Intelligence saving throw or be {@condition stunned} until this grapple ends."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Extract Brain",
+												"entries": [
+													"Melee Weapon Attack: +12 to hit, reach 5 ft., one {@condition incapacitated} humanoid {@condition grappled} by the lich. Hit: 55 ({@damage 10d10}) piercing damage. If this damage reduces the target to 0 hit points, the lich kills the target by extracting and devouring its brain."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Mind Blast (Recharge 5–6)",
+												"entries": [
+													"The lich magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 18 Intelligence saving throw or take 27 ({@damage 5d8 + 5}) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Illithilich Legendary Actions",
+										"entries": [
+											"The lich gains the following legendary action options, which replace all of the lich's legendary actions.",
+											{
+												"name": "Tentacles",
+												"entries": [
+													" The lich makes one attack with its tentacles."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Extract Brain (Costs 2 Actions)",
+												"entries": [
+													" The lich uses Extract Brain."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Mind Blast (Costs 3 Actions)",
+												"entries": [
+													" The lich recharges its Mind Blast and uses it."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Cast Spell (Costs 1–3 Actions)",
+												"entries": [
+													" The lich uses a spell slot to cast a 1st-, 2nd-, or 3rd-level spell that it has prepared. Doing so costs 1 legendary action per level of the spell."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), the illithilich can take a lair action to cause one of the following magical effects; the illithilich can't use the same effect two rounds in a row:",
+									{
+										"type": "list",
+										"items": [
+											"The illithilich rolls a {@dice d8} and regains a spell slot of that level or lower. If it has no spent spell slots of that level or lower, nothing happens.",
+											"The illithilich targets one creature it can see within 30 feet of it. A crackling cord of negative energy tethers the illithilich to the target. Whenever the illithilich takes damage, the target must make a {@dc 18} Constitution saving throw. On a failed save, the illithilich takes half the damage (rounded down), and the target takes the remaining damage. This tether lasts until initiative count 20 on the next round or until the illithilich or the target is no longer in the illithilich's lair.",
+											"The illithilich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the illithilich can see within 60 feet of it. The target must succeed on a {@dc 18} Constitution saving throw, taking 52 ({@damage 15d6}) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VGM/Alhoon.jpg"
+						}
+					}
+				]
+			},
+			"shortName": true,
+			"isNpc": false,
+			"isNamedCreature": true
+		},
+		{
+			"name": "The Icon",
+			"source": "dungeon_master",
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kobold"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d20 + 119",
+				"average": 297
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 7,
+			"dex": 16,
+			"con": 9,
+			"int": 16,
+			"wis": 15,
+			"cha": 20,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 26,
+			"languages": [
+				"Common",
+				"Draconic",
+				"Undercommon"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the Icon has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The Icon has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Icon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The Icon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).",
+						"In a new form, the Icon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Dropped Rock",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, one target directly below the Icon. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/winged-kobold.mp3?v=1.131.2"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Pack Tactics",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"U"
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Winged Kobold.png?v=1.131.2",
+			"fluff": {
+				"name": "Winged Kobold",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kobolds are craven reptilian humanoids that worship evil dragons as demigods and serve them as minions and toadies. Kobolds inhabit dragons' lairs when they can but more commonly infest dungeons, gathering treasures and trinkets to add to their own tiny hoards.",
+									{
+										"name": "Strength in Numbers",
+										"entries": [
+											" Kobolds are egg-laying creatures. They mature quickly and can live to be \"great wyrms\" more than a century old. However, many kobolds perish before they reach the end of their first decade. Physically weak, they are easy prey for predators. This vulnerability forces them to band together. Their superior numbers can win battles against powerful adversaries, but often with massive casualties on the kobold side."
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Tunnelers and Builders",
+										"type": "entries",
+										"entries": [
+											"Kobolds make up for their physical ineptitude with a cleverness for trap making and tunneling. Their lairs consist of low tunnels through which they move easily but which hinder larger humanoids. Kobolds also riddle their lairs with traps. The most insidious kobold traps make use of natural hazards and other creatures. A trip wire might connect to a spring-loaded trap that hurls clay pots of flesh-eating green slime or flings crates of venomous giant centipedes at intruders."
+										]
+									},
+									{
+										"name": "The Lost God",
+										"type": "entries",
+										"entries": [
+											"In addition to the dragons they revere, kobolds worship a lesser god named Kurtulmak. Legends speak of how Kurtulmak served as Tiamat's vassal in the Nine Hells until Garl Glittergold, the god of gnomes, stole a trinket from the Dragon Queen's hoard. Tiamat sent Kurtulmak to retrieve the trinket, but Garl Glittergold played a trick on him, collapsing the earth and trapping the kobold god in an underground maze for eternity. For this reason, kobolds hate gnomes and pranks of any kind. Kurtulmak's most devoted worshipers dedicate themselves to finding and releasing their lost god from his prison-maze."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7e32afdd-dd06-4519-9a01-3dd79ca852fe/d81y8ry-5a28bd67-f375-49e5-91f0-7ee502016bcb.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdlMzJhZmRkLWRkMDYtNDUxOS05YTAxLTNkZDc5Y2E4NTJmZVwvZDgxeThyeS01YTI4YmQ2Ny1mMzc1LTQ5ZTUtOTFmMC03ZWU1MDIwMTZiY2IuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.scqwXj9y1k4Ej8prIsOPfFYDrw7f2juNhQuqjA7ISes"
+						}
+					}
+				]
+			},
+			"skill": {
+				"history": "+10",
+				"perception": "+16",
+				"persuasion": "+12",
+				"stealth": "+20"
+			},
+			"save": {
+				"dex": "+13",
+				"con": "+8",
+				"wis": "+9",
+				"cha": "+12"
+			},
+			"legendaryGroup": {
+				"name": "Brass Dragon",
+				"source": "MM"
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Icon's innate spellcasting ability is Charisma (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell control flames|xge}",
+						"{@spell prestidigitation}",
+						"{@spell produce flame}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell create food and water}",
+							"{@spell greater restoration}",
+							"{@spell regenerate}",
+							"{@spell resurrection}",
+							"{@spell word of recall}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			]
+		},
+		{
+			"name": "Zorvir, Planar Umbra, Saint of Sanctuary",
+			"group": "Metallic Dragon",
+			"source": "dungeon_master",
+			"size": "G",
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 297,
+				"formula": "17d20 + 119"
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 25,
+			"int": 16,
+			"wis": 15,
+			"cha": 20,
+			"save": {
+				"dex": "+7",
+				"con": "+14",
+				"wis": "+9",
+				"cha": "+12"
+			},
+			"skill": {
+				"history": "+10",
+				"perception": "+16",
+				"persuasion": "+12",
+				"stealth": "+14"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 26,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Undercommon",
+				"Draconic"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Living Shadow",
+					"entries": [
+						"While in dim light or darkness, the dragon has resistance to damage that isn't force, psychic, or radiant."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the ancient brass shadow dragon can take the {@action Hide} action as a bonus action."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the ancient brass shadow dragon has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 20} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Breath Weapons {@recharge 5}",
+					"entries": [
+						"The dragon uses one of the following breath weapons:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Shadow Breath.",
+									"entry": "The dragon exhales shadowy fire in a 90-foot line that is 10 feet wide. Each creature in that line must make a {@dc 22} Dexterity saving throw, taking 56 ({@damage 16d6}) fire damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hit points by this damage dies, and an undead {@creature shadow} rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control."
+								},
+								{
+									"type": "item",
+									"name": "Sleep Breath.",
+									"entry": "The dragon exhales sleep gas in a 90-foot cone. Each creature in that area must succeed on a {@dc 22} Constitution saving throw or fall {@condition unconscious} for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it."
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).",
+						"In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a {@dc 23} Dexterity saving throw or take 15 ({@damage 2d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Brass Dragon",
+				"source": "MM"
+			},
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"dragonCastingColor": "A",
+			"traitTags": [
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"unconscious",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"blinded",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Young%20Red%20Shadow%20Dragon.png?v=1.131.2",
+			"fluff": {
+				"entries": [
+					"True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
+					"Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
+					"Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
+					"True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
+					"Dragon Age Categories",
+					{
+						"type": "table",
+						"colLabels": [
+							"Category",
+							"Size",
+							"Age Range"
+						],
+						"colStyles": [
+							"col-4",
+							"col-4",
+							"col-4"
+						],
+						"rows": [
+							[
+								"Wyrmling",
+								"Medium",
+								"5 years or less"
+							],
+							[
+								"Young",
+								"Large",
+								"6–100 years"
+							],
+							[
+								"Adult",
+								"Huge",
+								"101–800 years"
+							],
+							[
+								"Ancient",
+								"Gargantuan",
+								"801 years or more"
+							]
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Brass Dragons",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The most gregarious of the true dragons, brass dragons crave conversation, sunlight, and hot, dry climates.",
+									"A brass dragon's head is defined by the broad protective plate that expands from its forehead and the spikes protruding from its chin. A frill runs the length of its neck, and its tapering wings extend down the length of its tail. A brass dragon wyrmling's scales are a dull, mottled brown. As it ages, the dragon's scales begin to shine, eventually taking on a warm, burnished luster. Its wings and frills are mottled green toward the edges, darkening with age. As a brass dragon grows older, its pupils fade until its eyes resemble molten metal orbs.",
+									{
+										"name": "Boldly Talkative",
+										"type": "entries",
+										"entries": [
+											"A brass dragon engages in conversations with thousands of creatures throughout its long life, accumulating useful information which it will gladly share for gifts of treasure. If an intelligent creature tries to leave a brass dragon's presence without engaging in conversation, the dragon follows it. If the creature attempts to escape by magic or force, the dragon might respond with a fit of pique, using its sleep gas to incapacitate the creature. When it wakes, the creature finds itself pinned to the ground by giant claws or buried up to its neck in the sand while the dragon's thirst for small talk is slaked.",
+											"A brass dragon is trusting of creatures that appear to enjoy conversation as much as it does, but is smart enough to know when it is being manipulated. When that happens, the dragon often responds in kind, treating a bout of mutual trickery as a game."
+										]
+									},
+									{
+										"name": "Prized Treasures",
+										"type": "entries",
+										"entries": [
+											"Brass dragons covet magic items that allow them to converse with interesting personalities. An intelligent telepathic weapon or a magic lamp with a djinni bound inside it are among the greatest treasures a brass dragon can possess.",
+											"Brass dragons conceal their hoards under mounds of sand or in secret places far from their primary lairs. They have no trouble remembering where their treasure is buried, and therefore have no need for maps. Adventurers and wanderers should be wary if they happen across a chest hidden in an oasis or a treasure cache tucked away in a half-buried desert ruin, for these might be parts of a brass dragon's hoard."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Brass Dragon's Lair",
+										"entries": [
+											"A brass dragon's desert lair is typically a ruin, canyon, or cave network with ceiling holes to allow for sunlight."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Metallic Dragons",
+						"entries": [
+							"Metallic dragons seek to preserve and protect, viewing themselves as one powerful race among the many races that have a place in the world.",
+							{
+								"name": "Noble Curiosity",
+								"type": "entries",
+								"entries": [
+									"Metallic dragons covet treasure as do their evil chromatic kin, but they aren't driven as much by greed in their pursuit of wealth. Rather, metallic dragons are driven to investigate and collect, taking unclaimed relics and storing them in their lairs. A metallic dragon's treasure hoard is filled with items that reflect its persona, tell its history, and preserve its memories. Metallic dragons also seek to protect other creatures from dangerous magic. As such, powerful magic items and even evil artifacts are sometimes secreted away in a metallic dragon's hoard.",
+									"A metallic dragon can be persuaded to part with an item in its hoard for the greater good. However, another creature's need for or right to the item is often unclear from the dragon's point of view. A metallic dragon must be bribed or otherwise convinced to part with the item."
+								]
+							},
+							{
+								"name": "Solitary Shapeshifters",
+								"type": "entries",
+								"entries": [
+									"At some point in their long lives, metallic dragons gain the magical ability to assume the forms of humanoids and beasts. When a dragon learns how to disguise itself, it might immerse itself in other cultures for a time. Some dragons are too shy or paranoid to stray far from their lairs and their treasure hoards, but bolder dragons love to wander city streets in humanoid form, taking in the local culture and cuisine, and amusing themselves by observing how the smaller races live.",
+									"Some metallic dragons prefer to stay as far away from civilization as possible so as to not attract enemies. However, this means that they are often far out of touch with current events."
+								]
+							},
+							{
+								"name": "The Persistence of Memory",
+								"type": "entries",
+								"entries": [
+									"Metallic dragons have long memories, and they form opinions of humanoids based on previous contact with related humanoids. Good dragons can recognize humanoid bloodlines by smell, sniffing out each person they meet and remembering any relatives they have come into contact with over the years. A gold dragon might never suspect duplicity from a cunning villain, assuming that the villain is of the same mind and heart as a good and virtuous grandmother. On the other hand, the dragon might resent a noble paladin whose ancestor stole a silver statue from the dragon's hoard three centuries before."
+								]
+							},
+							{
+								"name": "King of Good Dragons",
+								"type": "entries",
+								"entries": [
+									"The chief deity of the metallic dragons is Bahamut, the Platinum Dragon. He dwells in the Seven Heavens of Mount Celestia, but often wanders the Material Plane in the magical guise of a venerable human male in peasant robes. In this form, he is usually accompanied by seven golden canaries-actually seven ancient gold dragons in polymorphed form.",
+									"Bahamut seldom interferes in the affairs of mortal creatures, though he makes exceptions to help thwart the machinations of Tiamat the Dragon Queen and her evil brood. Good-aligned clerics and paladins sometimes worship Bahamut for his dedication to justice and protection. As a lesser god, he has the power to grant divine spells."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"A strong wind blows around the dragon. Each creature within 60 feet of the dragon must succeed on a {@dc 15} Strength saving throw or be pushed 15 feet away from the dragon and knocked {@condition prone}. Gases and vapors are dispersed by the wind, and unprotected flames are extinguished. Protected flames; such as lanterns, have a 50 percent chance of being extinguished.",
+											"A cloud of sand swirls about in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners. Each creature in it must succeed on a {@dc 15} Constitution saving throw or be {@condition blinded} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"The region containing a legendary brass dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Tracks appear in the sand within 6 miles of the dragon's lair. The tracks lead to safe shelters and hidden water sources, while also leading away from areas that the dragon prefers to remain undisturbed.",
+											"Images of Large or smaller monsters haunt the desert sands within 1 mile of the dragon's lair. These illusions move and appear real, although they can do no harm. A creature that examines an image from a distance can tell it's an illusion with a successful {@dc 20} Intelligence ({@skill Investigation}) check. Any physical interaction with an image reveals it to be an illusion, because objects pass through it.",
+											"Whenever a creature with an Intelligence of 3 or higher comes within 30 feet of a water source within 1 mile of the dragon's lair, the dragon becomes aware of the creature's presence and location."
+										]
+									},
+									"If the dragon dies, the tracks fade in {@dice 1d10} days, but the other effects fade immediately."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Shadow Dragons",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Shadow dragons are true dragons that were either born in the Shadowfell or transformed by years spent within its dismal confines. Some shadow dragons embrace the Shadowfell for its bleak landscapes and desolation. Others seek to return to the Material Plane, hungry to spread the darkness and evil of the Plane of Shadow.",
+									{
+										"type": "entries",
+										"name": "Dark Portals",
+										"entries": [
+											"Portals to the Shadowfell manifest in forlorn places and the deep gloom of subterranean caverns. The dragons that lair in such places often discover these portals and find themselves transported to a new realm. Ancient dragons that sleep in their lairs for months or years at a time might find themselves spirited away, never knowing that a portal has formed without their knowledge as they dream."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Recast in Shadow",
+										"entries": [
+											"The transformation to a shadow dragon happens over a period of years, during which time a dragon's scales lose their luster and fade to a charcoal hue. Its leathery wings become translucent, its eyes paling to pools of opalescent gray. Shadow dragons find sunlight abhorrent, and they are weaker in bright light than they are in darkness. Darkness makes the dragon fade to a spectral shadow of its former self. The magical nature of dragons holds an attraction for the Shadowfell, which seems somehow to crave the might and majesty of these great reptiles. The Shadowfell also has a dispiriting effect on its denizens, such that the longer a creature remains on the plane, the more it accepts the plane's malaise. As months and years pass for a dragon on the Shadowfell, it becomes aware of the transformation being wrought upon it, and yet can do nothing to prevent it."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Back in the World",
+										"entries": [
+											"A shadow dragon is so suffused with the power of the Shadowfell that even a return to the Material Plane can't undo its transformation. Some shadow dragons attempt to lure other creatures from the mortal realm back to the Shadowfell to keep them company, at least until they tire of their guests and devour them. Others are happy to leave the Shadowfell behind forever, understanding that treasure and power are easier to come by in the Material Plane."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Shadow Dragon Template",
+						"entries": [
+							"Only a true dragon can transform into a shadow dragon, and only if it is born in the Shadowfell or remains there for several years. A dracolich can't be turned into a shadow dragon, since it loses its draconic nature when it becomes undead.",
+							"When a dragon becomes a shadow dragon, it retains its statistics except as described below. The shadow dragon might retain or lose any or all of its lair actions or inherit new ones, as the DM sees fit.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Damage Resistances",
+										"entries": [
+											"The dragon has resistance to necrotic damage."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Skill Proficiency: Stealth",
+										"entries": [
+											"The dragon's proficiency bonus is doubled for its Dexterity ({@skill Stealth}) checks."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Living Shadow",
+										"entries": [
+											"While in dim light or darkness, the dragon has resistance to damage that isn't force, psychic, or radiant."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Shadow Stealth",
+										"entries": [
+											"While in dim light or darkness, the dragon can take the {@action Hide} action as a bonus action."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Sunlight Sensitivity",
+										"entries": [
+											"While in sunlight, the dragon has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "New Action: Bite",
+										"entries": [
+											"If the dragon deals acid, cold, fire, lightning, or poison damage with its bite, change that damage type to necrotic."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "New Action: Shadow Breath",
+										"entries": [
+											"Any damage-dealing breath weapon possessed by the dragon deals necrotic damage instead of its original damage type. A humanoid reduced to 0 hit points by this damage dies, and an undead shadow rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Shadow%20Dragon.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Brass Dragon.jpg"
+						}
+					}
+				]
+			},
+			"resist": [
+				"necrotic"
+			],
+			"isNpc": true,
+			"isNamedCreature": true,
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Zorvir's innate spellcasting ability is Charisma (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell control flames|xge}",
+						"{@spell prestidigitation}",
+						"{@spell produce flame}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell create food and water}",
+							"{@spell greater restoration}",
+							"{@spell regenerate}",
+							"{@spell resurrection}",
+							"{@spell word of recall}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			]
+		},
+		{
+			"name": "Ancient Brass Shadow Dragon",
+			"group": "Metallic Dragon",
+			"source": "dungeon_master",
+			"size": "G",
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 297,
+				"formula": "17d20 + 119"
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 25,
+			"int": 16,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"dex": "+6",
+				"con": "+13",
+				"wis": "+8",
+				"cha": "+10"
+			},
+			"skill": {
+				"history": "+9",
+				"perception": "+14",
+				"persuasion": "+10",
+				"stealth": "+12"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 24,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Living Shadow",
+					"entries": [
+						"While in dim light or darkness, the dragon has resistance to damage that isn't force, psychic, or radiant."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the ancient brass shadow dragon can take the {@action Hide} action as a bonus action."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the ancient brass shadow dragon has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Breath Weapons {@recharge 5}",
+					"entries": [
+						"The dragon uses one of the following breath weapons:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Shadow Breath.",
+									"entry": "The dragon exhales shadowy fire in a 90-foot line that is 10 feet wide. Each creature in that line must make a {@dc 21} Dexterity saving throw, taking 56 ({@damage 16d6}) fire damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hit points by this damage dies, and an undead {@creature shadow} rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control."
+								},
+								{
+									"type": "item",
+									"name": "Sleep Breath.",
+									"entry": "The dragon exhales sleep gas in a 90-foot cone. Each creature in that area must succeed on a {@dc 21} Constitution saving throw or fall {@condition unconscious} for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it."
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).",
+						"In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a {@dc 22} Dexterity saving throw or take 15 ({@damage 2d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Brass Dragon",
+				"source": "MM"
+			},
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"dragonCastingColor": "A",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/brass-dragon.mp3?v=1.131.2"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened",
+				"unconscious",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"blinded",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Young%20Red%20Shadow%20Dragon.png?v=1.131.2",
+			"fluff": {
+				"entries": [
+					"True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
+					"Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
+					"Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
+					"True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
+					"Dragon Age Categories",
+					{
+						"type": "table",
+						"colLabels": [
+							"Category",
+							"Size",
+							"Age Range"
+						],
+						"colStyles": [
+							"col-4",
+							"col-4",
+							"col-4"
+						],
+						"rows": [
+							[
+								"Wyrmling",
+								"Medium",
+								"5 years or less"
+							],
+							[
+								"Young",
+								"Large",
+								"6–100 years"
+							],
+							[
+								"Adult",
+								"Huge",
+								"101–800 years"
+							],
+							[
+								"Ancient",
+								"Gargantuan",
+								"801 years or more"
+							]
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Brass Dragons",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The most gregarious of the true dragons, brass dragons crave conversation, sunlight, and hot, dry climates.",
+									"A brass dragon's head is defined by the broad protective plate that expands from its forehead and the spikes protruding from its chin. A frill runs the length of its neck, and its tapering wings extend down the length of its tail. A brass dragon wyrmling's scales are a dull, mottled brown. As it ages, the dragon's scales begin to shine, eventually taking on a warm, burnished luster. Its wings and frills are mottled green toward the edges, darkening with age. As a brass dragon grows older, its pupils fade until its eyes resemble molten metal orbs.",
+									{
+										"name": "Boldly Talkative",
+										"type": "entries",
+										"entries": [
+											"A brass dragon engages in conversations with thousands of creatures throughout its long life, accumulating useful information which it will gladly share for gifts of treasure. If an intelligent creature tries to leave a brass dragon's presence without engaging in conversation, the dragon follows it. If the creature attempts to escape by magic or force, the dragon might respond with a fit of pique, using its sleep gas to incapacitate the creature. When it wakes, the creature finds itself pinned to the ground by giant claws or buried up to its neck in the sand while the dragon's thirst for small talk is slaked.",
+											"A brass dragon is trusting of creatures that appear to enjoy conversation as much as it does, but is smart enough to know when it is being manipulated. When that happens, the dragon often responds in kind, treating a bout of mutual trickery as a game."
+										]
+									},
+									{
+										"name": "Prized Treasures",
+										"type": "entries",
+										"entries": [
+											"Brass dragons covet magic items that allow them to converse with interesting personalities. An intelligent telepathic weapon or a magic lamp with a djinni bound inside it are among the greatest treasures a brass dragon can possess.",
+											"Brass dragons conceal their hoards under mounds of sand or in secret places far from their primary lairs. They have no trouble remembering where their treasure is buried, and therefore have no need for maps. Adventurers and wanderers should be wary if they happen across a chest hidden in an oasis or a treasure cache tucked away in a half-buried desert ruin, for these might be parts of a brass dragon's hoard."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Brass Dragon's Lair",
+										"entries": [
+											"A brass dragon's desert lair is typically a ruin, canyon, or cave network with ceiling holes to allow for sunlight."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Metallic Dragons",
+						"entries": [
+							"Metallic dragons seek to preserve and protect, viewing themselves as one powerful race among the many races that have a place in the world.",
+							{
+								"name": "Noble Curiosity",
+								"type": "entries",
+								"entries": [
+									"Metallic dragons covet treasure as do their evil chromatic kin, but they aren't driven as much by greed in their pursuit of wealth. Rather, metallic dragons are driven to investigate and collect, taking unclaimed relics and storing them in their lairs. A metallic dragon's treasure hoard is filled with items that reflect its persona, tell its history, and preserve its memories. Metallic dragons also seek to protect other creatures from dangerous magic. As such, powerful magic items and even evil artifacts are sometimes secreted away in a metallic dragon's hoard.",
+									"A metallic dragon can be persuaded to part with an item in its hoard for the greater good. However, another creature's need for or right to the item is often unclear from the dragon's point of view. A metallic dragon must be bribed or otherwise convinced to part with the item."
+								]
+							},
+							{
+								"name": "Solitary Shapeshifters",
+								"type": "entries",
+								"entries": [
+									"At some point in their long lives, metallic dragons gain the magical ability to assume the forms of humanoids and beasts. When a dragon learns how to disguise itself, it might immerse itself in other cultures for a time. Some dragons are too shy or paranoid to stray far from their lairs and their treasure hoards, but bolder dragons love to wander city streets in humanoid form, taking in the local culture and cuisine, and amusing themselves by observing how the smaller races live.",
+									"Some metallic dragons prefer to stay as far away from civilization as possible so as to not attract enemies. However, this means that they are often far out of touch with current events."
+								]
+							},
+							{
+								"name": "The Persistence of Memory",
+								"type": "entries",
+								"entries": [
+									"Metallic dragons have long memories, and they form opinions of humanoids based on previous contact with related humanoids. Good dragons can recognize humanoid bloodlines by smell, sniffing out each person they meet and remembering any relatives they have come into contact with over the years. A gold dragon might never suspect duplicity from a cunning villain, assuming that the villain is of the same mind and heart as a good and virtuous grandmother. On the other hand, the dragon might resent a noble paladin whose ancestor stole a silver statue from the dragon's hoard three centuries before."
+								]
+							},
+							{
+								"name": "King of Good Dragons",
+								"type": "entries",
+								"entries": [
+									"The chief deity of the metallic dragons is Bahamut, the Platinum Dragon. He dwells in the Seven Heavens of Mount Celestia, but often wanders the Material Plane in the magical guise of a venerable human male in peasant robes. In this form, he is usually accompanied by seven golden canaries-actually seven ancient gold dragons in polymorphed form.",
+									"Bahamut seldom interferes in the affairs of mortal creatures, though he makes exceptions to help thwart the machinations of Tiamat the Dragon Queen and her evil brood. Good-aligned clerics and paladins sometimes worship Bahamut for his dedication to justice and protection. As a lesser god, he has the power to grant divine spells."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"A strong wind blows around the dragon. Each creature within 60 feet of the dragon must succeed on a {@dc 15} Strength saving throw or be pushed 15 feet away from the dragon and knocked {@condition prone}. Gases and vapors are dispersed by the wind, and unprotected flames are extinguished. Protected flames; such as lanterns, have a 50 percent chance of being extinguished.",
+											"A cloud of sand swirls about in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners. Each creature in it must succeed on a {@dc 15} Constitution saving throw or be {@condition blinded} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"The region containing a legendary brass dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Tracks appear in the sand within 6 miles of the dragon's lair. The tracks lead to safe shelters and hidden water sources, while also leading away from areas that the dragon prefers to remain undisturbed.",
+											"Images of Large or smaller monsters haunt the desert sands within 1 mile of the dragon's lair. These illusions move and appear real, although they can do no harm. A creature that examines an image from a distance can tell it's an illusion with a successful {@dc 20} Intelligence ({@skill Investigation}) check. Any physical interaction with an image reveals it to be an illusion, because objects pass through it.",
+											"Whenever a creature with an Intelligence of 3 or higher comes within 30 feet of a water source within 1 mile of the dragon's lair, the dragon becomes aware of the creature's presence and location."
+										]
+									},
+									"If the dragon dies, the tracks fade in {@dice 1d10} days, but the other effects fade immediately."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Shadow Dragons",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Shadow dragons are true dragons that were either born in the Shadowfell or transformed by years spent within its dismal confines. Some shadow dragons embrace the Shadowfell for its bleak landscapes and desolation. Others seek to return to the Material Plane, hungry to spread the darkness and evil of the Plane of Shadow.",
+									{
+										"type": "entries",
+										"name": "Dark Portals",
+										"entries": [
+											"Portals to the Shadowfell manifest in forlorn places and the deep gloom of subterranean caverns. The dragons that lair in such places often discover these portals and find themselves transported to a new realm. Ancient dragons that sleep in their lairs for months or years at a time might find themselves spirited away, never knowing that a portal has formed without their knowledge as they dream."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Recast in Shadow",
+										"entries": [
+											"The transformation to a shadow dragon happens over a period of years, during which time a dragon's scales lose their luster and fade to a charcoal hue. Its leathery wings become translucent, its eyes paling to pools of opalescent gray. Shadow dragons find sunlight abhorrent, and they are weaker in bright light than they are in darkness. Darkness makes the dragon fade to a spectral shadow of its former self. The magical nature of dragons holds an attraction for the Shadowfell, which seems somehow to crave the might and majesty of these great reptiles. The Shadowfell also has a dispiriting effect on its denizens, such that the longer a creature remains on the plane, the more it accepts the plane's malaise. As months and years pass for a dragon on the Shadowfell, it becomes aware of the transformation being wrought upon it, and yet can do nothing to prevent it."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Back in the World",
+										"entries": [
+											"A shadow dragon is so suffused with the power of the Shadowfell that even a return to the Material Plane can't undo its transformation. Some shadow dragons attempt to lure other creatures from the mortal realm back to the Shadowfell to keep them company, at least until they tire of their guests and devour them. Others are happy to leave the Shadowfell behind forever, understanding that treasure and power are easier to come by in the Material Plane."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Shadow Dragon Template",
+						"entries": [
+							"Only a true dragon can transform into a shadow dragon, and only if it is born in the Shadowfell or remains there for several years. A dracolich can't be turned into a shadow dragon, since it loses its draconic nature when it becomes undead.",
+							"When a dragon becomes a shadow dragon, it retains its statistics except as described below. The shadow dragon might retain or lose any or all of its lair actions or inherit new ones, as the DM sees fit.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Damage Resistances",
+										"entries": [
+											"The dragon has resistance to necrotic damage."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Skill Proficiency: Stealth",
+										"entries": [
+											"The dragon's proficiency bonus is doubled for its Dexterity ({@skill Stealth}) checks."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Living Shadow",
+										"entries": [
+											"While in dim light or darkness, the dragon has resistance to damage that isn't force, psychic, or radiant."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Shadow Stealth",
+										"entries": [
+											"While in dim light or darkness, the dragon can take the {@action Hide} action as a bonus action."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Sunlight Sensitivity",
+										"entries": [
+											"While in sunlight, the dragon has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "New Action: Bite",
+										"entries": [
+											"If the dragon deals acid, cold, fire, lightning, or poison damage with its bite, change that damage type to necrotic."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "New Action: Shadow Breath",
+										"entries": [
+											"Any damage-dealing breath weapon possessed by the dragon deals necrotic damage instead of its original damage type. A humanoid reduced to 0 hit points by this damage dies, and an undead shadow rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Brass Dragon.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Shadow%20Dragon.jpg"
+						}
+					}
+				]
+			},
+			"resist": [
+				"necrotic"
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Mind Flare",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of psionic energy. Each creature within a 20-foot-radius sphere centered on that point must make an Intelligence saving throw. A target takes {@damage 8d6} psychic damage on a failed save, or half as much damage on a successful one. Creatures that have an Intelligence score of 2 or lower are unaffected.",
+				"The explosion spreads around corners. Unsecured objects in the area that are not being worn or carried are thrown."
+			],
+			"source": "dungeon_master",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "shrunken brain of a joking father"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"S"
+			],
+			"fluff": {
+				"entries": [
+					"This is the signature spell of Auralich'el"
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,492 @@
+{
+	"name": "Ancient Brass Shadow Dragon",
+	"group": "Metallic Dragon",
+	"source": "dungeon_master",
+	"page": 104,
+	"size": "G",
+	"type": "dragon",
+	"alignment": [
+		"C",
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 20,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 297,
+		"formula": "17d20 + 119"
+	},
+	"speed": {
+		"walk": 40,
+		"burrow": 40,
+		"fly": 80
+	},
+	"str": 27,
+	"dex": 10,
+	"con": 25,
+	"int": 16,
+	"wis": 15,
+	"cha": 19,
+	"save": {
+		"dex": "+6",
+		"con": "+13",
+		"wis": "+8",
+		"cha": "+10"
+	},
+	"skill": {
+		"history": "+9",
+		"perception": "+14",
+		"persuasion": "+10",
+		"stealth": "+12"
+	},
+	"senses": [
+		"blindsight 60 ft.",
+		"darkvision 120 ft."
+	],
+	"passive": 24,
+	"immune": [
+		"fire"
+	],
+	"languages": [
+		"Common",
+		"Draconic"
+	],
+	"cr": "20",
+	"trait": [
+		{
+			"name": "Legendary Resistance (3/Day)",
+			"entries": [
+				"If the dragon fails a saving throw, it can choose to succeed instead."
+			]
+		},
+		{
+			"name": "Living Shadow",
+			"entries": [
+				"While in dim light or darkness, the dragon has resistance to damage that isn't force, psychic, or radiant."
+			]
+		},
+		{
+			"name": "Shadow Stealth",
+			"entries": [
+				"While in dim light or darkness, the ancient brass shadow dragon can take the {@action Hide} action as a bonus action."
+			]
+		},
+		{
+			"name": "Sunlight Sensitivity",
+			"entries": [
+				"While in sunlight, the ancient brass shadow dragon has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+			]
+		},
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage."
+			]
+		},
+		{
+			"name": "Claw",
+			"entries": [
+				"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+			]
+		},
+		{
+			"name": "Tail",
+			"entries": [
+				"{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Frightful Presence",
+			"entries": [
+				"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+			]
+		},
+		{
+			"name": "Breath Weapons {@recharge 5}",
+			"entries": [
+				"The dragon uses one of the following breath weapons:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Shadow Breath.",
+							"entry": "The dragon exhales shadowy fire in a 90-foot line that is 10 feet wide. Each creature in that line must make a {@dc 21} Dexterity saving throw, taking 56 ({@damage 16d6}) fire damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hit points by this damage dies, and an undead {@creature shadow} rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control."
+						},
+						{
+							"type": "item",
+							"name": "Sleep Breath.",
+							"entry": "The dragon exhales sleep gas in a 90-foot cone. Each creature in that area must succeed on a {@dc 21} Constitution saving throw or fall {@condition unconscious} for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Change Shape",
+			"entries": [
+				"The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).",
+				"In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+			]
+		}
+	],
+	"legendary": [
+		{
+			"name": "Detect",
+			"entries": [
+				"The dragon makes a Wisdom ({@skill Perception}) check."
+			]
+		},
+		{
+			"name": "Tail Attack",
+			"entries": [
+				"The dragon makes a tail attack."
+			]
+		},
+		{
+			"name": "Wing Attack (Costs 2 Actions)",
+			"entries": [
+				"The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a {@dc 22} Dexterity saving throw or take 15 ({@damage 2d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+			]
+		}
+	],
+	"legendaryGroup": {
+		"name": "Brass Dragon",
+		"source": "MM"
+	},
+	"environment": [
+		"desert",
+		"underdark"
+	],
+	"dragonCastingColor": "A",
+	"soundClip": {
+		"type": "external",
+		"url": "https://5e.tools/audio/bestiary/brass-dragon.mp3?v=1.131.2"
+	},
+	"traitTags": [
+		"Legendary Resistances",
+		"Sunlight Sensitivity"
+	],
+	"senseTags": [
+		"B",
+		"SD"
+	],
+	"actionTags": [
+		"Frightful Presence",
+		"Multiattack",
+		"Shapechanger"
+	],
+	"languageTags": [
+		"C",
+		"DR"
+	],
+	"damageTags": [
+		"P",
+		"S",
+		"B",
+		"F"
+	],
+	"miscTags": [
+		"MW",
+		"RCH",
+		"AOE"
+	],
+	"conditionInflict": [
+		"frightened",
+		"unconscious",
+		"prone"
+	],
+	"conditionInflictLegendary": [
+		"blinded",
+		"prone"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"tokenUrl": "https://5e.tools/img/MM/Young%20Red%20Shadow%20Dragon.png?v=1.131.2",
+	"fluff": {
+		"entries": [
+			"True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
+			"Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
+			"Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
+			"True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
+			"Dragon Age Categories",
+			{
+				"type": "table",
+				"colLabels": [
+					"Category",
+					"Size",
+					"Age Range"
+				],
+				"colStyles": [
+					"col-4",
+					"col-4",
+					"col-4"
+				],
+				"rows": [
+					[
+						"Wyrmling",
+						"Medium",
+						"5 years or less"
+					],
+					[
+						"Young",
+						"Large",
+						"6–100 years"
+					],
+					[
+						"Adult",
+						"Huge",
+						"101–800 years"
+					],
+					[
+						"Ancient",
+						"Gargantuan",
+						"801 years or more"
+					]
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Brass Dragons",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"The most gregarious of the true dragons, brass dragons crave conversation, sunlight, and hot, dry climates.",
+							"A brass dragon's head is defined by the broad protective plate that expands from its forehead and the spikes protruding from its chin. A frill runs the length of its neck, and its tapering wings extend down the length of its tail. A brass dragon wyrmling's scales are a dull, mottled brown. As it ages, the dragon's scales begin to shine, eventually taking on a warm, burnished luster. Its wings and frills are mottled green toward the edges, darkening with age. As a brass dragon grows older, its pupils fade until its eyes resemble molten metal orbs.",
+							{
+								"name": "Boldly Talkative",
+								"type": "entries",
+								"entries": [
+									"A brass dragon engages in conversations with thousands of creatures throughout its long life, accumulating useful information which it will gladly share for gifts of treasure. If an intelligent creature tries to leave a brass dragon's presence without engaging in conversation, the dragon follows it. If the creature attempts to escape by magic or force, the dragon might respond with a fit of pique, using its sleep gas to incapacitate the creature. When it wakes, the creature finds itself pinned to the ground by giant claws or buried up to its neck in the sand while the dragon's thirst for small talk is slaked.",
+									"A brass dragon is trusting of creatures that appear to enjoy conversation as much as it does, but is smart enough to know when it is being manipulated. When that happens, the dragon often responds in kind, treating a bout of mutual trickery as a game."
+								]
+							},
+							{
+								"name": "Prized Treasures",
+								"type": "entries",
+								"entries": [
+									"Brass dragons covet magic items that allow them to converse with interesting personalities. An intelligent telepathic weapon or a magic lamp with a djinni bound inside it are among the greatest treasures a brass dragon can possess.",
+									"Brass dragons conceal their hoards under mounds of sand or in secret places far from their primary lairs. They have no trouble remembering where their treasure is buried, and therefore have no need for maps. Adventurers and wanderers should be wary if they happen across a chest hidden in an oasis or a treasure cache tucked away in a half-buried desert ruin, for these might be parts of a brass dragon's hoard."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "A Brass Dragon's Lair",
+								"entries": [
+									"A brass dragon's desert lair is typically a ruin, canyon, or cave network with ceiling holes to allow for sunlight."
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Metallic Dragons",
+				"entries": [
+					"Metallic dragons seek to preserve and protect, viewing themselves as one powerful race among the many races that have a place in the world.",
+					{
+						"name": "Noble Curiosity",
+						"type": "entries",
+						"entries": [
+							"Metallic dragons covet treasure as do their evil chromatic kin, but they aren't driven as much by greed in their pursuit of wealth. Rather, metallic dragons are driven to investigate and collect, taking unclaimed relics and storing them in their lairs. A metallic dragon's treasure hoard is filled with items that reflect its persona, tell its history, and preserve its memories. Metallic dragons also seek to protect other creatures from dangerous magic. As such, powerful magic items and even evil artifacts are sometimes secreted away in a metallic dragon's hoard.",
+							"A metallic dragon can be persuaded to part with an item in its hoard for the greater good. However, another creature's need for or right to the item is often unclear from the dragon's point of view. A metallic dragon must be bribed or otherwise convinced to part with the item."
+						]
+					},
+					{
+						"name": "Solitary Shapeshifters",
+						"type": "entries",
+						"entries": [
+							"At some point in their long lives, metallic dragons gain the magical ability to assume the forms of humanoids and beasts. When a dragon learns how to disguise itself, it might immerse itself in other cultures for a time. Some dragons are too shy or paranoid to stray far from their lairs and their treasure hoards, but bolder dragons love to wander city streets in humanoid form, taking in the local culture and cuisine, and amusing themselves by observing how the smaller races live.",
+							"Some metallic dragons prefer to stay as far away from civilization as possible so as to not attract enemies. However, this means that they are often far out of touch with current events."
+						]
+					},
+					{
+						"name": "The Persistence of Memory",
+						"type": "entries",
+						"entries": [
+							"Metallic dragons have long memories, and they form opinions of humanoids based on previous contact with related humanoids. Good dragons can recognize humanoid bloodlines by smell, sniffing out each person they meet and remembering any relatives they have come into contact with over the years. A gold dragon might never suspect duplicity from a cunning villain, assuming that the villain is of the same mind and heart as a good and virtuous grandmother. On the other hand, the dragon might resent a noble paladin whose ancestor stole a silver statue from the dragon's hoard three centuries before."
+						]
+					},
+					{
+						"name": "King of Good Dragons",
+						"type": "entries",
+						"entries": [
+							"The chief deity of the metallic dragons is Bahamut, the Platinum Dragon. He dwells in the Seven Heavens of Mount Celestia, but often wanders the Material Plane in the magical guise of a venerable human male in peasant robes. In this form, he is usually accompanied by seven golden canaries-actually seven ancient gold dragons in polymorphed form.",
+							"Bahamut seldom interferes in the affairs of mortal creatures, though he makes exceptions to help thwart the machinations of Tiamat the Dragon Queen and her evil brood. Good-aligned clerics and paladins sometimes worship Bahamut for his dedication to justice and protection. As a lesser god, he has the power to grant divine spells."
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Lair Actions",
+						"entries": [
+							"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects:",
+							{
+								"type": "list",
+								"items": [
+									"A strong wind blows around the dragon. Each creature within 60 feet of the dragon must succeed on a {@dc 15} Strength saving throw or be pushed 15 feet away from the dragon and knocked {@condition prone}. Gases and vapors are dispersed by the wind, and unprotected flames are extinguished. Protected flames; such as lanterns, have a 50 percent chance of being extinguished.",
+									"A cloud of sand swirls about in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners. Each creature in it must succeed on a {@dc 15} Constitution saving throw or be {@condition blinded} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Regional Effects",
+						"entries": [
+							"The region containing a legendary brass dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+							{
+								"type": "list",
+								"items": [
+									"Tracks appear in the sand within 6 miles of the dragon's lair. The tracks lead to safe shelters and hidden water sources, while also leading away from areas that the dragon prefers to remain undisturbed.",
+									"Images of Large or smaller monsters haunt the desert sands within 1 mile of the dragon's lair. These illusions move and appear real, although they can do no harm. A creature that examines an image from a distance can tell it's an illusion with a successful {@dc 20} Intelligence ({@skill Investigation}) check. Any physical interaction with an image reveals it to be an illusion, because objects pass through it.",
+									"Whenever a creature with an Intelligence of 3 or higher comes within 30 feet of a water source within 1 mile of the dragon's lair, the dragon becomes aware of the creature's presence and location."
+								]
+							},
+							"If the dragon dies, the tracks fade in {@dice 1d10} days, but the other effects fade immediately."
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Shadow Dragons",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Shadow dragons are true dragons that were either born in the Shadowfell or transformed by years spent within its dismal confines. Some shadow dragons embrace the Shadowfell for its bleak landscapes and desolation. Others seek to return to the Material Plane, hungry to spread the darkness and evil of the Plane of Shadow.",
+							{
+								"type": "entries",
+								"name": "Dark Portals",
+								"entries": [
+									"Portals to the Shadowfell manifest in forlorn places and the deep gloom of subterranean caverns. The dragons that lair in such places often discover these portals and find themselves transported to a new realm. Ancient dragons that sleep in their lairs for months or years at a time might find themselves spirited away, never knowing that a portal has formed without their knowledge as they dream."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Recast in Shadow",
+								"entries": [
+									"The transformation to a shadow dragon happens over a period of years, during which time a dragon's scales lose their luster and fade to a charcoal hue. Its leathery wings become translucent, its eyes paling to pools of opalescent gray. Shadow dragons find sunlight abhorrent, and they are weaker in bright light than they are in darkness. Darkness makes the dragon fade to a spectral shadow of its former self. The magical nature of dragons holds an attraction for the Shadowfell, which seems somehow to crave the might and majesty of these great reptiles. The Shadowfell also has a dispiriting effect on its denizens, such that the longer a creature remains on the plane, the more it accepts the plane's malaise. As months and years pass for a dragon on the Shadowfell, it becomes aware of the transformation being wrought upon it, and yet can do nothing to prevent it."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Back in the World",
+								"entries": [
+									"A shadow dragon is so suffused with the power of the Shadowfell that even a return to the Material Plane can't undo its transformation. Some shadow dragons attempt to lure other creatures from the mortal realm back to the Shadowfell to keep them company, at least until they tire of their guests and devour them. Others are happy to leave the Shadowfell behind forever, understanding that treasure and power are easier to come by in the Material Plane."
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Shadow Dragon Template",
+				"entries": [
+					"Only a true dragon can transform into a shadow dragon, and only if it is born in the Shadowfell or remains there for several years. A dracolich can't be turned into a shadow dragon, since it loses its draconic nature when it becomes undead.",
+					"When a dragon becomes a shadow dragon, it retains its statistics except as described below. The shadow dragon might retain or lose any or all of its lair actions or inherit new ones, as the DM sees fit.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Damage Resistances",
+								"entries": [
+									"The dragon has resistance to necrotic damage."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Skill Proficiency: Stealth",
+								"entries": [
+									"The dragon's proficiency bonus is doubled for its Dexterity ({@skill Stealth}) checks."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Living Shadow",
+								"entries": [
+									"While in dim light or darkness, the dragon has resistance to damage that isn't force, psychic, or radiant."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Shadow Stealth",
+								"entries": [
+									"While in dim light or darkness, the dragon can take the {@action Hide} action as a bonus action."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Sunlight Sensitivity",
+								"entries": [
+									"While in sunlight, the dragon has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "New Action: Bite",
+								"entries": [
+									"If the dragon deals acid, cold, fire, lightning, or poison damage with its bite, change that damage type to necrotic."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "New Action: Shadow Breath",
+								"entries": [
+									"Any damage-dealing breath weapon possessed by the dragon deals necrotic damage instead of its original damage type. A humanoid reduced to 0 hit points by this damage dies, and an undead shadow rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control."
+								]
+							}
+						]
+					}
+				]
+			}
+		],
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://5e.tools/img/bestiary/MM/Brass Dragon.jpg"
+				}
+			},
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://5e.tools/img/bestiary/MM/Shadow%20Dragon.jpg"
+				}
+			}
+		]
+	},
+	"resist": [
+		"necrotic"
+	]
+}

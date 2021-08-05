@@ -242,7 +242,7 @@
 			"recharge": "dawn",
 			"reqAttune": false,
 			"entries": [
-				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and cause a magic sheath to envelope a bladed weapon that you can see within 30 feet. While sheathed in this way, the weapons damage type changes to bludgeoning if it wasn't already. If the weapon was magical, it remains magical. Otherwise it is treated as a nonmagical weapon. This effect ends if the weapon is unsheathed or at the next dawn.",
+				"This wand has 3 charges. While holding it, you can use an action to expend one of its charges and cause a magic sheath to envelope a bladed weapon that you can see within 30 feet. While sheathed in this way, the weapon's damage type changes to bludgeoning if it wasn't already. If the weapon was magical, it remains magical. Otherwise it is treated as a nonmagical weapon. This effect ends if the weapon is unsheathed or at the next dawn.",
 				"The wand regains {@dice 1d3} expended charges daily at dawn."
 			]
 		},

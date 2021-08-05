@@ -71,6 +71,84 @@
 	],
 	"monster": [
 		{
+			"name": "Pigeon",
+			"source": "dungeon_master",
+			"page": 0,
+			"size": "T",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 1,
+				"formula": "1d4 - 1"
+			},
+			"speed": {
+				"walk": 5,
+				"fly": 60
+			},
+			"str": 1,
+			"dex": 12,
+			"con": 8,
+			"int": 2,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"perception": "+3",
+				"survival": "+3"
+			},
+			"passive": 13,
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"The pigeon doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Magnetoreception",
+					"entries": [
+						"The pigeon has advantage on Wisdom ({@skill Survival}) checks to navigate or avoid getting lost."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Peck",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"urban"
+			],
+			"familiar": true,
+			"traitTags": [
+				"Flyby"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"alias": [
+				"Dove"
+			]
+		},
+		{
 			"name": "Pipe Fox",
 			"source": "dungeon_master",
 			"size": "T",
